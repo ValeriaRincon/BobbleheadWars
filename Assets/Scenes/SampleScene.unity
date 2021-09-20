@@ -543,6 +543,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 50
   head: {fileID: 1366024873}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!4 &531214934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4427695919387890460, guid: 96e23fb7ccb1355419528c2ba3aab1db, type: 3}
@@ -1402,6 +1405,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100078, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
       propertyPath: m_RootOrder
