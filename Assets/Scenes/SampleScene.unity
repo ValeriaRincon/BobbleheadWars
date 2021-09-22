@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 8a41ba289cf3b1a4cba2ea3cba3bbb38, type: 2}
 --- !u!1001 &42310360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1467,6 +1467,26 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100048, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100050, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100052, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100078, guid: 7f78b096b427d419f9918e4ae4fc4aec, type: 3}
       propertyPath: m_Layer
