@@ -895,11 +895,14 @@ MonoBehaviour:
   - {fileID: 802049024}
   - {fileID: 1080750546}
   alien: {fileID: 7126762007588773883, guid: 6378d0f87d7a2a34cb38e673797dd1a9, type: 3}
+  upgradePrefab: {fileID: 105092, guid: 941d6224549424c91b1cf112b44ec0cb, type: 3}
   maxAliensOnScreen: 15
   totalAliens: 15
   minSpawnTime: 0
   maxSpawnTime: 3
   aliensPerSpawn: 2
+  gun: {fileID: 1422079132}
+  upgradeMaxTimeSpawn: 7.5
 --- !u!4 &961450422
 Transform:
   m_ObjectHideFlags: 0
