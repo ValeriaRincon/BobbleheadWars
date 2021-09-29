@@ -1474,6 +1474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1681755830787385155, guid: f0f0e62273cce0c48a86c601e9a60243, type: 3}
   launchPosition: {fileID: 941561529}
+  isUpgraded: 1
+  upgradeTime: 10
 --- !u!54 &1422079133
 Rigidbody:
   m_ObjectHideFlags: 0
