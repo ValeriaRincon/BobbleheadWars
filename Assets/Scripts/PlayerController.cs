@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour
     public Animator bodyAnimator;
     public float[] hitforce;
     public float timeBetweenHits = 2.5f;
+    public Rigidbody marineBody;
     
     private CharacterController characterController;
     private Vector3 currentLookTarget = Vector3.zero;
     private bool isHit = false;
     private float timeSinceHit = 0;
     private int hitNumber = -1;
+    private bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -85,12 +87,28 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
-                    //death todo
+                    Die();
                 }
                 isHit = true;
                 SoundManager.Instance.PlayOneShot(SoundManager.Instance.hurt);
             }
             alien.Die();
         }
+    }
+
+    public void Die()
+    {
+        bodyAnimator.SetBool("IsMoving", false);
+        marineBody.transform.parent = null;
+        marineBody.isKinematic = false;
+        marineBody.useGravity = true;
+        marineBody.gameObject.GetComponent<CapsuleCollider>().enabled = true;
+        marineBody.gameObject.GetComponent<Gun>().enabled = false;
+
+        Destroy(head.gameObject.GetComponent<HingeJoint>());
+        head.transform.parent = null;
+        head.useGravity = true;
+        SoundManager.Instance.PlayOneShot(SoundManager.Instance.marineDeath);
+        Destroy(gameObject);
     }
 }
