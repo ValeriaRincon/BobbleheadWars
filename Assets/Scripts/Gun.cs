@@ -57,6 +57,10 @@ public class Gun : MonoBehaviour
     void Update()
     {
         currentTime += Time.deltaTime;
+        if (currentTime > upgradeTime && isUpgraded == true)
+        {
+            isUpgraded = false;
+        }
 
         if(Input.GetMouseButtonDown(0))
         {
@@ -69,11 +73,6 @@ public class Gun : MonoBehaviour
         if(Input.GetMouseButtonUp(0))
         {
             CancelInvoke("fireBullet");
-        }
-
-        if (currentTime > upgradeTime && isUpgraded == true)
-        {
-            isUpgraded = false;
         }
     }
 }
