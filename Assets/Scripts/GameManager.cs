@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public int aliensPerSpawn;
     public Gun gun;
     public float upgradeMaxTimeSpawn = 7.5f;
+    public GameObject deathfloor;
 
     private int aliensOnScreen = 0;
     private float generatedSpawnTime = 0;
@@ -78,6 +79,7 @@ public class GameManager : MonoBehaviour
                         newAlien.transform.LookAt(targetRotation);
 
                         alienScript.OnDestroy.AddListener(AlienDestroyed);
+                        alienScript.GetDeathParticles().SetDeathFloor(deathfloor);
                     }
                 }
             }
